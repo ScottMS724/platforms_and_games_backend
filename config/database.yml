@@ -23,7 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: platforms_and_games_backend_development
+  database: platforms_and_games_backend_development 
+  username: postgres
+  password: piggysterr1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,10 @@ development:
 test:
   <<: *default
   database: platforms_and_games_backend_test
+  username: postgres
+  password: piggysterr1 
+  
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,3 +89,4 @@ production:
   database: platforms_and_games_backend_production
   username: platforms_and_games_backend
   password: <%= ENV['PLATFORMS_AND_GAMES_BACKEND_DATABASE_PASSWORD'] %>
+  

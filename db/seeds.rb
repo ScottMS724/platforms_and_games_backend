@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+classic = Game.create(name: "Classic WoW")
+mario = Game.create(name: "Super Mario World 1")
+zelda = Game.create(name: "Zelda: Ocarina of Time")
+pokemon = Game.create(name: "Pokemon: Red Version")
+
