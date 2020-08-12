@@ -11,3 +11,10 @@ mario = Game.create(name: "Super Mario World 1")
 zelda = Game.create(name: "Zelda: Ocarina of Time")
 pokemon = Game.create(name: "Pokemon: Red Version")
 
+platform = Platform.create(name: "Super Nintendo (SNES)")
+platform = Platform.create(name: "Game Boy") 
+platform = Platform.create(name: "PC") 
+platform = Platform.create(name: "Nintendo 64") 
+
+
+
