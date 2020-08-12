@@ -11,10 +11,17 @@ mario = Game.create(name: "Super Mario World 1")
 zelda = Game.create(name: "Zelda: Ocarina of Time")
 pokemon = Game.create(name: "Pokemon: Red Version")
 
-platform = Platform.create(name: "Super Nintendo (SNES)")
-platform = Platform.create(name: "Game Boy") 
-platform = Platform.create(name: "PC") 
-platform = Platform.create(name: "Nintendo 64") 
+super_nintendo = Platform.create(name: "Super Nintendo (SNES)")
+game_boy = Platform.create(name: "Game Boy") 
+computer = Platform.create(name: "PC") 
+nintendo_64 = Platform.create(name: "Nintendo 64") 
+
+Combination.create(game: classic, platform: computer)
+Combination.create(game: mario, platform: super_nintendo)
+Combination.create(game: zelda, platform: nintendo_64)
+Combination.create(game: pokemon, platform: game_boy)
+
+
 
 
 
