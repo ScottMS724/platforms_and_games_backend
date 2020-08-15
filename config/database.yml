@@ -26,6 +26,7 @@ development:
   database: platforms_and_games_backend_development 
   username: postgres
   password: piggysterr1
+  host: localhost 
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -61,7 +62,8 @@ test:
   <<: *default
   database: platforms_and_games_backend_test
   username: postgres
-  password: piggysterr1 
+  password: piggysterr1
+  host: localhost 
   
 
 
@@ -89,4 +91,5 @@ production:
   database: platforms_and_games_backend_production
   username: platforms_and_games_backend
   password: <%= ENV['PLATFORMS_AND_GAMES_BACKEND_DATABASE_PASSWORD'] %>
+  
   
