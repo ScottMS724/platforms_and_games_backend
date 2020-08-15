@@ -2,7 +2,8 @@ class Api::V1::PlatformsController < ApplicationController
 
     def index 
         platforms = Platform.all 
-        render json: platforms  
+        #render json: platforms  
+        render json: PlatformSerializer.new(platforms)
     end
 
     def create
